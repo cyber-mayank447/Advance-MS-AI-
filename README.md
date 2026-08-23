@@ -55,38 +55,107 @@ The project combines a powerful Python backend with a modern interactive interfa
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
 ```text
-MS_AI/
+jarvis-main/
 │
 ├── engine/
 │   ├── auth/
+│   │   ├── samples/
+│   │   │   ├── face.1.1.jpg
+│   │   │   ├── face.1.2.jpg
+│   │   │   ├── ...
+│   │   │   └── face.1.50.jpg
+│   │   │
 │   │   ├── trainer/
 │   │   │   └── trainer.yml
-│   │   └── haarcascade_frontalface_default.xml
+│   │   │
+│   │   ├── haarcascade_frontalface_default.xml
+│   │   ├── recognize.py
+│   │   └── trainer.py
 │   │
+│   ├── __init__.py
+│   ├── advanced_commands.py
+│   ├── automation.py
+│   ├── automation_commands.py
+│   ├── browser_control.py
 │   ├── command.py
+│   ├── config.py
+│   ├── contact_whatsapp.py
+│   ├── contact_whatsapp_commands.py
+│   ├── db.py
 │   ├── features.py
-│   └── ...
+│   ├── helper.py
+│   ├── local_commands.py
+│   ├── memory.json
+│   ├── memory.py
+│   ├── ms_memory.py
+│   ├── pc_advanced.py
+│   ├── pc_commands.py
+│   ├── pc_control.py
+│   ├── safety.py
+│   ├── smart_intent.py
+│   ├── tts.py
+│   ├── v14_commands.py
+│   ├── v14_macros.py
+│   ├── v14_screen.py
+│   ├── voice_config.py
+│   ├── voice_notes.py
+│   ├── web_automation.py
+│   ├── web_commands.py
+│   ├── whatsapp_commands.py
+│   ├── whatsapp_send.py
+│   └── whatsapp_smart.py
 │
-├── static/
-│   ├── css/
-│   │   └── style.css
+├── www/
+│   ├── assets/
+│   │   ├── audio/
+│   │   │   └── start_sound
+│   │   │
+│   │   ├── img/
+│   │   │   └── logo
+│   │   │
+│   │   └── vendor/
+│   │       └── textillate/
+│   │           ├── animate.css
+│   │           ├── jquery.fittext.js
+│   │           ├── jquery.lettering.js
+│   │           └── style.css
 │   │
-│   ├── js/
-│   │   └── script.js
-│   │
-│   ├── img/
-│   └── audio/
+│   ├── controller.js
+│   ├── index.html
+│   ├── main.js
+│   ├── script.js
+│   └── style.css
 │
-├── templates/
-│   └── index.html
-│
-├── ms_ai.py
+├── jarvis.db
+├── main.py
 ├── requirements.txt
-└── README.md
+└── VOICE_SETUP.md
 ```
+
+### 🧩 Core Components
+
+| Folder / File                 | Purpose                                     |
+| ----------------------------- | ------------------------------------------- |
+| `engine/`                     | Core AI assistant logic                     |
+| `engine/auth/`                | Face authentication system                  |
+| `engine/advanced_commands.py` | Advanced assistant commands                 |
+| `engine/automation.py`        | System automation                           |
+| `engine/browser_control.py`   | Browser control & automation                |
+| `engine/memory.py`            | Assistant memory system                     |
+| `engine/pc_control.py`        | PC control functionality                    |
+| `engine/smart_intent.py`      | Smart command & intent detection            |
+| `engine/tts.py`               | Text-to-Speech functionality                |
+| `engine/whatsapp_smart.py`    | WhatsApp automation                         |
+| `www/`                        | Web-based assistant interface               |
+| `www/assets/`                 | UI assets, images, audio & vendor libraries |
+| `jarvis.db`                   | Local database                              |
+| `main.py`                     | Main application entry point                |
+| `requirements.txt`            | Python dependencies                         |
+| `VOICE_SETUP.md`              | Voice configuration & setup guide           |
+
 
 > 📌 Folder names may vary depending on your latest project version.
 
