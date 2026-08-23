@@ -3,7 +3,7 @@ import subprocess
 import eel
 
 
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AQ.Ab8RN6KauKLWwlA6eXn8KPioyvRWgkAccMm81HjnSr90PvUNfQ")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "PASTE_YOUR_NEW_GEMINI_API_KEY_HERE")
 
 if GEMINI_API_KEY and not GEMINI_API_KEY.startswith("PASTE_"):
     
